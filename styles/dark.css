@@ -24,6 +24,7 @@
   --link-hover-color: var(--main-text-color);
   --link-focus-color: var(--main-text-color);
   --background-image: url(../images/cover-image-dark.png);
+  --visibility: visible;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -43,9 +44,6 @@
   --link-hover-color: var(--main-text-color);
   --link-focus-color: var(--main-text-color);
   --background-image: url(../images/cover-image-dark.png);
-  }
-
-  .rec {
-    display: block;
+  --visibility: visible;
   }
 }

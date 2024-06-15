@@ -53,6 +53,7 @@
   position: absolute;
   top: 21px;
   right: 49px;
+  display: var(--visibility);
 }
 
 .rec::after {
