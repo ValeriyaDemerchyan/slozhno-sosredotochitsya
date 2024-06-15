@@ -10,6 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --accent-color: #FF0070;
+  --color-text-shadow: var(--accent-color);
   --corner-color: var(--accent-color);
   --link-accent: var(--accent-color);
   --heading-color: var(--accent-color);
@@ -28,6 +29,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
   --accent-color: #FF0070;
+  --color-text-shadow: var(--accent-color);
   --corner-color: var(--accent-color);
   --link-accent: var(--accent-color);
   --heading-color: var(--accent-color);
@@ -41,5 +43,9 @@
   --link-hover-color: var(--main-text-color);
   --link-focus-color: var(--main-text-color);
   --background-image: url(../images/cover-image-dark.png);
+  }
+
+  .rec {
+    display: block;
   }
 }

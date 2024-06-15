@@ -10,6 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --accent-color: #FF0070;
+  --color-text-shadow: var(--heading-color);
   --corner-color: var(--subtitle-color);
   --button-color: var(--subtitle-color);
   --button-hover-color: #35343040;
@@ -22,6 +23,8 @@
   --link-hover-color: var(--main-text-color);
   --link-focus-color: var(--main-text-color);
   --background-image: url(../images/cover-image-light.png);
+  --background-color: #FFF1F7;
+
 }
 
 .page.theme_light .rec {
@@ -31,9 +34,10 @@
 @media (prefers-color-scheme: light) {
   :root {
   --accent-color: #FF0070;
+  --color-text-shadow: var(--heading-color);
   --corner-color: var(--subtitle-color);
   --button-color: var(--subtitle-color);
-  --button-hover-color: #FF007040;
+  --button-hover-color: #35343040;
   --title-color: #FFC2E6;
   --heading-color:  #FF8DCB;
   --section-title-color: var(--subtitle-color);
@@ -43,5 +47,12 @@
   --link-hover-color: var(--main-text-color);
   --link-focus-color: var(--main-text-color);
   --background-image: url(../images/cover-image-light.png);
+  --background-color: #FFF1F7;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .rec {
+    display: none;
   }
 }

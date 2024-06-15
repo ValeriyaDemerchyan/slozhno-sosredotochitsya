@@ -4,6 +4,7 @@
 */
 :root {
   --accent-color: #FF0070;
+  --color-text-shadow: var(--accent-color);
   --corner-color: var(--accent-color);
   --link-accent: var(--accent-color);
   --heading-color: var(--accent-color);
@@ -11,6 +12,7 @@
   --button-hover-color: #FF007040;
   --title-color: #DB00FF;
   --subtitle-color: #000028;
+  --background-color: var(--subtitle-color);
   --main-text-color: #F1B2CE;
   --section-title-color: var(--accent-color);
   --link-accent: var(--accent-color);
