@@ -160,11 +160,16 @@
 }
 
 .section__about-methods {
-  grid-template-columns: 315px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
 }
 
-.section__about-methods .section__title {
-  grid-row: span 6;
+.answers__methods {
+  grid-column: span 2;
+}
+
+.section__about-methods .section__block {
+  margin-block-start: 20px;
 }
 
 .section__title {
@@ -288,6 +293,7 @@
     flex-direction: column;
     margin-block-start: 16.6vh;
     align-items: end;
+    gap: 10px;
   }
 
   .header__title {
@@ -301,7 +307,7 @@
   }
 
   .section__about-problem {
-    grid-template-columns: 236px 1fr;
+    gap: 35px;
   }
 
   .section__about-reasons {
@@ -310,7 +316,7 @@
   }
 
   .section__about-methods {
-    grid-template-columns: 236px 1fr;
+    column-gap: 35px;
   }
 
   .footer__title {
@@ -363,6 +369,7 @@
 
   .section__about-problem {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .section__about-reasons .section__title {
@@ -371,10 +378,7 @@
 
   .section__about-methods {
     grid-template-columns: 1fr;
-  }
-
-  .section__about-methods .accent__title-bold {
-    margin-block-start: -30px;
+    row-gap: 20px;
   }
 
   .gallery {
