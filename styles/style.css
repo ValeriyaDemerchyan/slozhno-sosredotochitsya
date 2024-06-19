@@ -1,5 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
+* {
+  outline: 1px solid red;
+}
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
@@ -139,12 +141,14 @@
 }
 
 .section__about-problem {
-  grid-template-columns: 314.96px 1fr;
-  row-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
-.section__about-problem .section__title {
-  grid-row: span 2;
+.answers{
+  display: grid;
+  row-gap: 20px;
+  grid-column: span 2;
 }
 
 .section__about-reasons {
@@ -261,7 +265,8 @@
 }
 
 .footer {
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 668px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -278,7 +283,7 @@
   text-shadow: 2px 2px 0px var(--color-text-shadow, #FF0070);
 }
 
-@media (width <=768px) {
+@media (width <= 768px) {
 .header__theme-menu {
   justify-self: flex-end;
 }
@@ -317,7 +322,7 @@
   }
 }
 
-@media (width <=375px) {
+@media (width <= 500px) {
 
   .header {
     padding: 10px;
